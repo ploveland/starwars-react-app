@@ -7,7 +7,6 @@ function FlipCard({ card }: any ) {
 
   function handleClick() {
     setShowBack(!showBack);
-    console.log(showBack);
   }
 
   return (

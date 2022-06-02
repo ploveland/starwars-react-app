@@ -35,6 +35,11 @@ body {
   
   .container {
     height: 100vh;
+
+    .search {
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -71,8 +76,8 @@ body {
       &.front {
         z-index: 9;
         transform: rotateY(0);
-        // background-repeat: no-repeat;
-        // background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
         background-color:rgb(68, 51, 163);
         color: rgb(255, 255, 255);
 
@@ -84,7 +89,7 @@ body {
 
         .card-img {
           width: 225px;
-          height: 325px;
+          height: 315px;
         }
 
         .icon {
@@ -104,18 +109,8 @@ body {
           margin-bottom: 0;
         }
 
-        .brand {
-          font-size: 2rem;
-          font-weight: bold;
-        }
-
         .name {
           font-size: 1.4rem;
-        }
-
-        .price {
-          font-size: 1.6rem;
-          font-weight: bold;
         }
 
         .icon {
