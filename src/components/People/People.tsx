@@ -2,7 +2,7 @@ import React from 'react'
 import { fetchJson } from '../../api'
 import { PersonType } from '../../types'
 import { MDBCol } from "mdbreact";
-import FlipCard from './../Shared/FlipCard';
+import Person from './../Person/Person';
 
 function People() {
   const [people, setPeople] = React.useState<PersonType[]>([])
@@ -78,8 +78,8 @@ function People() {
             </div>
             <div className="col d-flex flex-column flex-wrap flex-md-row justify-content-around align-items-center">
               {searchResult && searchResult.length > 0 ?
-                searchResult.map(person => <FlipCard key={person.name} card={person} />)
-                : people.map(person => <FlipCard key={person.name} card={person} />)
+                searchResult.map(person => <Person key={person.name} person={person} />)
+                : people.map(person => <Person key={person.name} person={person} />)
               }
             </div>
           </div>
